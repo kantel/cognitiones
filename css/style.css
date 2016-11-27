@@ -52,9 +52,9 @@ table {
 }
 /* Typographie */
 h1 {
-    font-family: 'Bitter-Regular', Georgia, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2DBE60;
-    font-size: 1.8em; /* 40px / 16px */
+    font-size: 1.5em; /* 40px / 16px */
     line-height: 1.2em; /* 48px / 40px */
     margin-bottom: .4em;/* 16px / 40px */
     margin-top: .4em; /* 16px / 40px */
@@ -68,9 +68,9 @@ h1 img{
 
 h2 {
     border-bottom: 2px solid #dbdbdb;
-    font-family: 'Bitter-Regular', Georgia, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color: #2DBE60;
-    font-size: 1.5em; /* 24px/16px */
+    font-size: 1.3em; /* 24px/16px */
     line-height: 1em;
     margin-bottom: .666666667em; /* 16px / 24px */
     margin-top: 1em;
@@ -175,7 +175,7 @@ ul.tags li {
 
 .articleInfo {
 	font-style: italic;
-	font-size: 90%;
+	font-size: 85%;
 }
 .related li {
     list-style-type: none
@@ -186,7 +186,7 @@ ul.tags li {
 }
 .related time {
     display: block;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: .625em;
     line-height: 1em;
     margin-bottom: 1.5em;
@@ -228,7 +228,7 @@ nav[role="navigation"] {
     background-image: -ms-linear-gradient(top, #222222, #111111);
     background-image: -o-linear-gradient(top, #222222, #111111);
     background-image: linear-gradient(to bottom, #222222, #111111);
-    font-family: Verdana, Arial, serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     overflow: hidden;
     width: 100%;
 	font-size: .725em;
@@ -383,8 +383,6 @@ nav[role="navigation"] ul.hide{
 	    margin-right: 0;
 	}
 	@font-face {
-		 font-family: 'Bitter-Regular';
-		 src: url("Bitter-Regular.ttf") format ('truetype');
 	    font-weight: normal;
 	    font-style: normal;
 	} 
