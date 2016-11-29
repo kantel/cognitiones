@@ -332,7 +332,7 @@ nav a {
 /* ------ Responsive Regeln ------- */
 
 /* 600px */
-@media (min-width: 37.5em) {
+@media screen (min-width: 37.5em) {
 	.slats li {
 	    float: left;
 		margin-right: 2.5316456%; /* 24px / 948px */
@@ -348,7 +348,7 @@ nav a {
 	
 }
 /* 860px */
-@media all and (min-width: 53.75em) {
+@media screen and (min-width: 53.75em) {
 	aside{
 		display: block;
 		margin-bottom: 1em;
@@ -377,7 +377,7 @@ nav a {
 
 }
 /* 940px */
-@media all and (min-width: 58.75em) {
+@media screen and (min-width: 58.75em) {
 	.main {
 		display: table-cell;
 		padding-right: 2.5316456%; /* 24px / 948px */
@@ -412,10 +412,8 @@ nav a {
 		column-rule: 1px dotted #ccc;
 	}
 }
-
-/* (max-width: 58.75em) */
-
-@media screen and (max-width: 900px) {
+/* Navbar spezifisch */
+@media screen and (max-width: 58.75em) {
 	nav ul {
 		  display: none;
 	}
@@ -454,15 +452,31 @@ label:after{
 	}
 
 	nav ul li {
-		display: block;
+		  display: block;
   		float: none;
   		width: 100%;
   		text-align: left;
   		background: #222;
-		text-indent: 20px;
+		  text-indent: 20px;
 	}
 
 	nav > ul > li {
   		margin-left: 0px;
 	}
+
+	nav > ul li ul li {
+  		display: block;
+		  float: none;
+	}
+  
+	nav > ul li ul {
+		  display: block;
+  		position: relative;
+  		width: 100%;
+		  z-index: 9999;
+		  float: none;
+	}
+h1 {
+	  font-size: 26px;
+}
 }
