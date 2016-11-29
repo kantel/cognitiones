@@ -1,0 +1,179 @@
+/* Navigation Menu - Background */
+.navigation {
+  /* critical sizing and position styles */
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  
+  /* non-critical appearance styles */
+  list-style: none;
+  background: #111111;
+}
+
+/* Navigation Menu - List items */
+.nav-item {
+  /* non-critical appearance styles */
+  width: 200px;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #000000;
+}
+
+.nav-item a {
+  /* non-critical appearance styles */
+  display: block;
+  padding: 0.9em;
+  background: -webkit-linear-gradient(315deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: #aaaaaa;
+  font-size: 1.0em;
+  text-decoration: none;
+  -webkit-transition: color 0.2s, background 0.5s;
+  transition: color 0.2s, background 0.5s;
+}
+
+.nav-item a:hover {
+  color: #ffffff;
+}
+
+/* Suchbox */
+.navbar-search .search-query {
+  padding: 10px 25px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  color: #ffffff;
+  background-color: #515151;
+  border-color: #111111;
+}
+
+.navbar-search .search-query{
+  color: #cccccc;
+}
+
+.navbar-search .search-query:focus,
+.navbar-search .search-query.focused {
+  padding: 10px 25px;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+input[type=text] {
+	border-radius: 20px;
+}
+
+/* Site Wrapper - Everything that isn't navigation */
+.site-wrap {
+  /* Critical position and size styles */
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #ffffff; /* Needs a background or else the nav will show through */
+  position: relative;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  
+  /* non-critical apperance styles */
+  padding: 4em;
+}
+
+/* Nav Trigger */
+.nav-trigger {
+  /* critical styles - hide the checkbox input */
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+
+label[for="nav-trigger"] {
+  /* critical positioning styles */
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  
+  /* non-critical apperance styles */
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  /* background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='6'/><rect y='24' width='30' height='6'/><rect y='12' width='30' height='6'/></svg>"); */
+  background-image: url(../images/logo.jpg);
+  background-size: contain;
+}
+
+/* Make the Magic Happen */
+.nav-trigger + label, .site-wrap {
+  -webkit-transition: left 0.2s;
+  transition: left 0.2s;
+}
+
+.nav-trigger:checked + label {
+  left: 215px;
+}
+
+.nav-trigger:checked ~ .site-wrap {
+  left: 200px;
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+
+body {
+	/* Without this, the body has excess horizontal scroll when the menu is open */
+  overflow-x: hidden;
+}
+
+/* Additional non-critical styles */
+
+h1, h2, h3, p {
+  max-width: 600px;
+  margin: 0 auto 1em;
+}
+
+h1, h2 {
+	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #2DBE60;
+	    font-size: 1.5em; /* 40px / 16px */
+		font-weight: 400;
+	    line-height: 1.2em; /* 48px / 40px */
+	    margin-bottom: .4em;/* 16px / 40px */
+	    margin-top: .4em; /* 16px / 40px */
+}
+
+h3 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #000000;
+	    font-size: 1.0em; /* 40px / 16px */
+		font-weight: 800;
+	    line-height: 1.0em; /* 48px / 40px */
+	    margin-bottom: .4em;/* 16px / 40px */
+	    margin-top: .4em; /* 16px / 40px */
+	}
+
+p {
+		font-weight: 300;
+		line-height: 1.4em;
+	}
+	
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+code {
+	padding: 2px;
+	background: #ddd;
+}
+
+.articleInfo {
+	font-style: italic;
+	font-size: 85%;
+}
+
+/* Micro reset */
+*,*:before,*:after{box-sizing:border-box;margin:0;padding:0;}
+html, body { height: 100%; width: 100%; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
