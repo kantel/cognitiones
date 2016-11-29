@@ -20,8 +20,7 @@ time, mark, audio, video {
   -mox-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
+}             
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{ 
     display:block;
 }
@@ -51,7 +50,6 @@ table {
 :focus {
     outline: none
 }
-
 /* Typographie */
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -60,6 +58,12 @@ h1 {
     line-height: 1.2em; /* 48px / 40px */
     margin-bottom: .4em;/* 16px / 40px */
     margin-top: .4em; /* 16px / 40px */
+}
+header h1{
+	margin-bottom: 0;
+}
+h1 img{
+	max-width: 100%;
 }
 
 h2 {
@@ -71,7 +75,6 @@ h2 {
     margin-bottom: .666666667em; /* 16px / 24px */
     margin-top: 1em;
 }
-
 figcaption,
 .top-stories li {
     font-size: .75em; /* 12px / 16px */
@@ -107,7 +110,6 @@ a {
     color: rgb(157,0,0);
     text-decoration: none;
 }
-
 /*
  * Grundlegende Stilregeln
  * --------------------------------------------------*/
@@ -120,6 +122,12 @@ p,
 ul,
 ol {
     margin-bottom: 1em
+}
+header{
+	background: #e3e0d9;
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5); /* FF3.5 - 3.6 */
+    -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5); /* Saf3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,.5); /* Opera 10.5, IE9, FF4+, Chrome 6+, iOS 5 */
 }
 
 #container {
@@ -195,6 +203,106 @@ ul.tags li {
 	padding: 0 1.0548523%;
 }
 
+/*
+ * Nav
+ ** --------------------------------------------------*/
+#nav-collapse{
+	display: none;
+	color: #fff;
+	text-align: right;
+	width: 100%;
+	padding: .625em 0 .625em 0;
+}
+#nav-collapse.active{
+	display: block;
+}
+#nav-collapse:after {
+ 	content: " \2630 "
+} 
+ 
+nav[role="navigation"] {
+    background-color: #1b1b1b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#222222), to(#111111));
+    background-image: -webkit-linear-gradient(top, #222222, #111111);
+    background-image: -moz-linear-gradient(top, #222222, #111111);
+    background-image: -ms-linear-gradient(top, #222222, #111111);
+    background-image: -o-linear-gradient(top, #222222, #111111);
+    background-image: linear-gradient(to bottom, #222222, #111111);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    width: 100%;
+	font-size: .725em;
+}
+nav[role="navigation"] ul{
+	margin-bottom: 0;
+}
+nav[role="navigation"] ul.hide{
+	display:none;
+}
+
+.navbar-search .search-query {
+  color: #ffffff;
+  background-color: #515151;
+  border-color: #111111;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+     -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px 0 rgba(255, 255, 255, 0.15);
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+.navbar-search .search-query:-moz-placeholder {
+  color: #cccccc;
+}
+
+.navbar-search .search-query:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+.navbar-search .search-query::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+.navbar-search .search-query:focus,
+.navbar-search .search-query.focused {
+  padding: 5px 15px;
+  color: #333333;
+  text-shadow: 0 1px 0 #ffffff;
+  background-color: #ffffff;
+  border: 0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+     -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+	  }
+
+    nav[role="navigation"] li.active a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+        nav[role="navigation"] li a:active {
+            color: #FFF;
+        }
+        nav[role="navigation"] li a:hover,
+        nav[role="navigation"] li a:focus {
+            color: #fff;
+        }
+    nav[role="navigation"] ul {
+        margin: 0;
+    }
+	nav[role="navigation"] li{
+		padding: .625em 2em .625em 0;
+		border-top: 1px solid #333;
+		
+	}
+    nav[role="navigation"] a {
+        color: #ddd;
+		display: block;
+        text-decoration: none;
+    }
 	footer[role="contentinfo"] {
 	    background: rgb(34,34,34);
 	    border-top: 5px solid #ccc;
@@ -264,73 +372,6 @@ ul.tags li {
 	width: 100%;
 	height: 100%;
 }
-
-/* ----- Navigation ----- */
-
-header {
-	  background: #181818;
-	  height: 60px;
-	  padding-top: 10px;
-	  padding-bottom: 10px;
-}
-
-
-.inner {
-	  max-width: 1000px;
-	  margin: 0 auto;
-	  padding: 0px 0px;
-	  position: relative;
-}
-
-.logo {
-	  text-decoration: none;
-	  color: #ffffff;
-	  font-weight: 100;
-	  font-size: 18px;
-	  line-height: 40px;
-}
-
-
-nav > ul {
-  	float: right;
-}
-
-nav > ul > li {
-	font-size: 12px;
-  	text-align: center;
-	  line-height: 40px;
-	  margin-left: 40px;
-}
-
-nav ul li:hover {
-	  cursor: pointer;
-	  position: relative;
-}
-
-nav ul li:hover > a {
-	  color: #777;
-}
-nav > ul > li > a {
-	  cursor: pointer;
-	  display: block;
-  	outline: none;
-  	width: 100%;
-	  text-decoration: none;
-}
-
-nav > ul > li {
-  	float: left;
-}
-nav a {
-	  color: white;
-}
-
-[type="checkbox"], label {
-	  display: none;
-}
-
-/* ------ Responsive Regeln ------- */
-
 /* 600px */
 @media (min-width: 37.5em) {
 	.slats li {
@@ -410,59 +451,5 @@ nav a {
 		-moz-column-rule: 1px dotted #ccc; /* Firefox */
 		-webkit-column-rule: 1px dotted #ccc; /* Safari, Chrome */
 		column-rule: 1px dotted #ccc;
-	}
-}
-
-/* (max-width: 58.75em) */
-
-@media screen and (max-width: 900px) {
-	nav ul {
-		  display: none;
-	}
-
-	label {
-  		display: block;
-  		background: #222;
-		  width: 40px;
-  		height: 40px;
-  		cursor: pointer;
-		  position: absolute;
-		  right: 20px;
-  		top: 0px;
-	}
-  
-label:after{
-  content:'';
-  display: block;
-  width: 30px;
-  height: 5px;
-  background: #777;
-  margin: 7px 5px;
-  box-shadow: 0px 10px 0px #777, 0px 20px 0px #777
-}
-
-	[type="checkbox"]:checked ~ ul {
-  		display: block;
-  		z-index: 9999;
-  		position: absolute;
-		  right: 20px;
-		  left: 20px;
-	}
-
-	nav a {
-		  color: #777;
-	}
-
-	nav ul li {
-		display: block;
-  		float: none;
-  		width: 100%;
-  		text-align: left;
-  		background: #222;
-		text-indent: 20px;
-	}
-
-	nav > ul > li {
-  		margin-left: 0px;
 	}
 }
