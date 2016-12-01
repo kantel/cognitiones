@@ -1,0 +1,3 @@
+#title "Archiv Tech Notes"
+
+**[World Markdown mit Jekyll?](World Markdown mit Jekyll?)**: Jekyll biete sich eventuell an, um der Mac-only-Falle zu entkommen, in die ich mich mit RubyFrontier hineinmanövriert habe.

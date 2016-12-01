@@ -1,0 +1,8 @@
+#title "World Markdown mit Jekyll?"
+#dateCreated "1. Dezember 2016"
+
+Jekyll biete sich eventuell an, um der Mac-only-Falle zu entkommen, in die ich mich mit RubyFrontier hineinmanövriert habe.
+
+<%= imageref("jekyll") %>
+
+Denn so ein Notizbuch wird ja nicht so fett werden, wie mein <del>Blog</del> Kritzelheft, daher macht es vielleicht nichts, daß man bei Jekyll immer alle Seiten herausschreiben muß. (Muß man das?)
