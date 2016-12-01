@@ -1,0 +1,22 @@
+---
+index: &3
+  :path: !ruby/object:Pathname
+    path: index.html
+  :adr: !ruby/object:Pathname
+    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/index.txt
+  :linetext: Cognitiones Publicae
+der horrorclown als popkulturelles phänomen: &2
+  :path: !ruby/object:Pathname
+    path: essays/horrorclown.html
+  :adr: !ruby/object:Pathname
+    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/essays/horrorclown.txt
+  :linetext: Der Horrorclown als popkulturelles Phänomen
+essays: &1
+  :path: !ruby/object:Pathname
+    path: essays.html
+  :adr: !ruby/object:Pathname
+    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/essays.txt
+  :linetext: Archiv Essays
+archiv essays: *1
+horrorclown: *2
+cognitiones publicae: *3

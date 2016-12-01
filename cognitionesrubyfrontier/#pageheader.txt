@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<%= metatags() %>
+	<meta name="viewport" content="width=device-width">
+	<%= linkstylesheets() %>
+	<%= linkjavascripts() %>
+	<title><%= sitetitle %>: <%= title %></title>
+</head>
+<%= bodytag() %>
