@@ -3,34 +3,34 @@ horrorclown: &1
   :path: !ruby/object:Pathname
     path: essays/horrorclown.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/essays/horrorclown.txt
+    path: /Users/kantel/git/cognitiones/cognitionesrubyfrontier/essays/horrorclown.txt
   :linetext: Der Horrorclown als popkulturelles Phänomen
 der horrorclown als popkulturelles phänomen: *1
 essays: &2
   :path: !ruby/object:Pathname
     path: essays.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/essays.txt
+    path: /Users/kantel/git/cognitiones/cognitionesrubyfrontier/essays.txt
   :linetext: Archiv Essays
 archiv essays: *2
 index: &3
   :path: !ruby/object:Pathname
     path: index.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/index.txt
+    path: /Users/kantel/git/cognitiones/cognitionesrubyfrontier/index.txt
   :linetext: Cognitiones Publicae
 cognitiones publicae: *3
 worldmarkdownjekyll: &4
   :path: !ruby/object:Pathname
     path: technotes/worldmarkdownjekyll.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/technotes/worldmarkdownjekyll.txt
+    path: /Users/kantel/git/cognitiones/cognitionesrubyfrontier/technotes/worldmarkdownjekyll.txt
   :linetext: World Markdown mit Jekyll?
 world markdown mit jekyll?: *4
 technotes: &5
   :path: !ruby/object:Pathname
     path: technotes.html
   :adr: !ruby/object:Pathname
-    path: /Users/admin/git/cognitiones/cognitionesrubyfrontier/technotes.txt
+    path: /Users/kantel/git/cognitiones/cognitionesrubyfrontier/technotes.txt
   :linetext: Archiv Tech Notes
 archiv tech notes: *5

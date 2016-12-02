@@ -1,8 +1,49 @@
 #title "World Markdown mit Jekyll?"
 #dateCreated "1. Dezember 2016"
 
-Jekyll biete sich eventuell an, um der Mac-only-Falle zu entkommen, in die ich mich mit RubyFrontier hineinmanövriert habe.
+[Jekyll][1] biete sich eventuell an, um der Mac-only-Falle zu entkommen, in die ich mich mit [RubyFrontier][2] hineinmanövriert habe.
 
 <%= imageref("jekyll") %>
 
 Denn so ein Notizbuch wird ja nicht so fett werden, wie mein <del>Blog</del> Kritzelheft, daher macht es vielleicht nichts, daß man bei Jekyll immer alle Seiten herausschreiben muß. (Muß man das?)
+
+### To Dos
+
+  * Jekyll installieren √
+  * Jekyll für TextMate? √
+  * Jekyll für Atom?
+  * Pandoc für TextMate installieren.
+  * Pandoc für Atom?
+  * Tufte CSS installieren
+  * Tufte CSS aufbohren, damit Quelltexte die volle Seitenbreite einnehmen √
+
+### TextMate und Jekyll
+
+  * [jekyll.tmbundle][3]: This TextMate bundle is fully customized for Octopress, a blog engine based on jekyll. It provides a group of snippets for Octopress Tags, such as codeblock, gist, etc. And it provides several powerfull commands, which can build, launch jekyll or publish blog directly from TextMate.
+  * [Jekyll.tmbundle][4]: This bundle provides dead simple support for Jekyll in TextMate. A language file is included which should identify HTML or Markdown files with [YAML Front Matter][9]. A template is included for a blank blog post; create a new file from the Jekyll template. Build your site with ⌘+B
+  * [YAML Front Matter syntax highlighting in TextMate][5]
+  
+  * [Deploy your Jekyll Site Directly from TextMate][6]
+  * [How to Create a TextMate Bundle][7]
+  * [Jekyll Resources][8]
+
+
+### Atom und Jekyll
+
+  * [Jekyll-Atom][10] (ein Package direkt von der Atom-Seite)
+  * [Atom and Markdown Writer for Jekyll][11]
+  * [Atom – An IDE for Jekyll Blog][12]
+
+
+[1]: http://cognitiones.kantel-chaos-team.de/webworking/staticsites/jekyll.html
+[2]: http://cognitiones.kantel-chaos-team.de/webworking/staticsites/rubyfrontier.html
+[3]: https://github.com/drnic/jekyll-tmbundle
+[4]: https://github.com/infininight/jekyll.tmbundle
+[5]: http://dropshado.ws/post/27450570083/yaml-front-matter-syntax-highlighting-in-textmate
+[6]: http://arnklint.com/technology/deploy-jekyll-with-textmate.html
+[7]: http://www.daveperrett.com/articles/2010/09/30/how-to-create-a-textmate-bundle/
+[8]: https://jekyllrb.com/docs/resources/
+[9]: https://github.com/mojombo/jekyll/wiki/yaml-front-matter
+[10]: https://atom.io/packages/jekyll
+[11]: http://www.jamessturtevant.com/posts/atom-and-markdown-writer-for-jekyll/
+[12]: http://goharsha.com/blog/atom-an-ide-for-jekyll-blog/

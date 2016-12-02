@@ -19,6 +19,12 @@
   background: #111111;
 }
 
+.navigation li {
+    list-style: none;
+	color: #ffffff;
+}
+
+
 /* Navigation Menu - List items */
 .nav-item {
   /* non-critical appearance styles */
@@ -138,6 +144,13 @@ h1, h2, h3, p {
   margin: 0 auto 1em;
 }
 
+.site-wrap ul, ol, li {
+    max-width: 600px;
+    margin: 0 auto 0.5em;
+	padding-left: 1em;
+	font-weight: 300;
+}
+
 h1, h2 {
 	    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #2DBE60;
@@ -152,7 +165,7 @@ h3 {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		color: #000000;
 	    font-size: 1.0em; /* 40px / 16px */
 		font-weight: 800;
-	    line-height: 1.0em; /* 48px / 40px */
+	    line-height: 1.4em; /* 48px / 40px */
 	    margin-bottom: .4em;/* 16px / 40px */
 	    margin-top: .4em; /* 16px / 40px */
 	}
