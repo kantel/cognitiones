@@ -1,0 +1,14 @@
+site_name: Cognitiones Privatae
+theme: mkdocs
+
+
+pages:
+- Home: "index.md"
+- Zweite Seite: "secondpage.md"
+
+markdown_extensions:
+- footnotes
+
+repo_url: https://github.com/kantel
+
+site_dir: "/Applications/MAMP/htdocs/nevernote"
