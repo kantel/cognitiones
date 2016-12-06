@@ -9,6 +9,6 @@ pages:
 markdown_extensions:
 - footnotes
 
-repo_url: https://github.com/kantel
+repo_url: https://github.com/kantel/cognitiones
 
 site_dir: "/Applications/MAMP/htdocs/nevernote"
