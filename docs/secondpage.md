@@ -23,9 +23,9 @@ explizit geladen werden.
 
 ## Todos
 
-  * Die Schrift muß größer werden, die Default-Schriftgröße ist nichts für meine alten Augen.
-  * Ich hätte gerne grüne `<h1>`-Überschriften.
-  * Das Karo-Muster im Hintergrund sollte weg. 
+  * Die Schrift muß größer werden, die Default-Schriftgröße ist nichts für meine alten Augen. √
+  * Ich hätte gerne grüne `<h1>`-Überschriften. √
+  * Das Karo-Muster im Hintergrund sollte weg. √
 
 
 [1]: https://pythonhosted.org/Markdown/extensions/

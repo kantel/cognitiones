@@ -1,6 +1,5 @@
-site_name: Cognitiones Privatae
-theme: mkdocs
-
+site_name: Nevernote
+theme: readthedocs
 
 pages:
 - Home: "index.md"
@@ -12,3 +11,5 @@ markdown_extensions:
 repo_url: https://github.com/kantel/cognitiones
 
 site_dir: "/Applications/MAMP/htdocs/nevernote"
+
+extra_css: [css/user.css]
