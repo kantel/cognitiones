@@ -7,6 +7,8 @@ pages:
 
 markdown_extensions:
 - footnotes
+- smarty:
+    smart_quotes: False
 
 repo_url: https://github.com/kantel/cognitiones
 

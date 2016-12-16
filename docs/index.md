@@ -2,7 +2,7 @@
 
 ![Silo](images/silo.gif)
 
-Hallo Jörg. Das wird vielleicht einmal mein ganz privater Evernote-Ersatz. Raus aus den Datensilos dieser Welt!
+Hallo Welt. Das wird vielleicht einmal Euer ganz privater Evernote-Ersatz mit MkDocs, Markdown, Live-Server und/oder statischen Seiten gelingt die Flucht aus aus den Datensilos!
 
 ## Commands
 
@@ -17,3 +17,11 @@ Hallo Jörg. Das wird vielleicht einmal mein ganz privater Evernote-Ersatz. Raus
     docs/
         index.md  # The documentation homepage.
         ...       # Other markdown pages, images and other files.
+
+## (Live-) Server starten
+
+~~~bash
+cd ~/Dropbox/nevernote
+mkdocs serve
+~~~
+
