@@ -1,0 +1,16 @@
+site_name: Cognitiones Privatae
+theme: readthedocs
+
+pages:
+- Home: "index.md"
+- Schnelle Notizen: "dailynotes.md"
+
+markdown_extensions:
+- footnotes
+- smarty:
+    smart_quotes: False
+- pymdownx.tasklist
+
+site_dir: "/Applications/MAMP/htdocs/nevernote"
+
+extra_css: [css/user.css]
